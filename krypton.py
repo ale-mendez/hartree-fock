@@ -10,8 +10,8 @@ hf.create_atom(Z, 0)
 hf.add_orbitals(orbitals)
 hf.set_grid()
 etot, r, res = hf.hartree_fock()
-print 'Finished calculation for Z = {0} ({1})'.format(Z, name)
-print 'Hartree-Fock energy: {0}'.format(etot)
+print (f'Finished calculation for Z = {Z} ({name})')
+print (f'Hartree-Fock energy: {etot}')
 
 fig, ax = pl.subplots()
 # This plots every orbital
